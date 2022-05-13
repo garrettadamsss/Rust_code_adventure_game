@@ -62,10 +62,12 @@ fn main(){
        } else if choice == 4 {
            choice = 4; 
            println!("Thank you traveler... I bid you good luck!");
+           return; 
        } 
        if gold < 10 {
            choice = 4; 
            println!("Thank you traveler... I bid you good luck!");
+           panic!("exiting");
        }
        println!("\n\n");
    }
